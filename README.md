@@ -6,7 +6,7 @@ Raptor Vita Port is a native PS Vita port of *Raptor: Call of the Shadows*. It i
 reverse-engineered source port **[skynettx/raptor](https://github.com/skynettx/raptor)**
 (itself based on the reverse-engineered codebase by nukeykt), licensed under the GPL-2.0.
 
-> **No game data is included.** You need your own copy of Raptor (e.g. the GOG version, v1.2 or later)
+> **No game data is included.** You need your own copy of Raptor (e.g. the GoG version, v1.2 or the old steam version)
 > and copy its data files to your Vita.
 
 ## Features
@@ -32,7 +32,7 @@ reverse-engineered source port **[skynettx/raptor](https://github.com/skynettx/r
 
 1. Install `Rap-Vita_v1.1.vpk` with VitaShell.
 2. Create the folder `ux0:data/Raptor/`.
-3. Copy `FILE0000.GLB` … `FILE0006.GLB` from the `data` folder of your Raptor installation (e.g. GOG 2010 version [2015 steam version dont work])
+3. Copy `FILE0000.GLB` … `FILE0006.GLB` from the `data` folder of your Raptor installation (e.g. GOG 2010 version [2015 steam version dont work] but the old steam version)
    to `ux0:data/Raptor/`
 4. Start **RAP-Vita**.
 
@@ -42,7 +42,7 @@ Save games, `SETUP.INI` and screenshots (`screenshots/`) are stored in `ux0:data
 
 **"Could not load SoundFont.sf2" error at startup**
 
-This happens when a `SETUP.INI` from the PC version (e.g. GOG) was copied to the Vita. The PC version uses
+This happens when a `SETUP.INI` from the PC version (e.g.  or old steam version) was copied to the Vita. The PC version uses
 General MIDI music, which needs a `SoundFont.sf2` file that the Vita doesn't have.
 
 Fix: open `ux0:data/Raptor/SETUP.INI` and make sure the `[Music]` section contains this line:
